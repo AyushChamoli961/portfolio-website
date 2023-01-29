@@ -14,10 +14,10 @@ const Nav = () => {
   return (
     <nav>
       <a href="#" onClick={()=> setActivenav("#")} className={activeNav === "#" ? "active": ""}><AiOutlineHome/></a>
-      <a href="#contact" onClick={()=> setActivenav("contact")} className={activeNav === "contact" ? "active": ""} ><AiOutlineMessage/></a>
       <a href="#experience" onClick={()=> setActivenav("experience")} className={activeNav === "experience" ? "active": ""}><AiOutlineBook/></a>
       <a href="#services" onClick={()=> setActivenav("services")} className={activeNav === "services" ? "active": ""}><RiServiceLine/></a>
       <a href="#portfolio" onClick={()=> setActivenav("portfolio")} className={activeNav === "portfolio" ? "active": ""}><RiSuitcaseLine/></a>
+      <a href="#contact" onClick={()=> setActivenav("contact")} className={activeNav === "contact" ? "active": ""} ><AiOutlineMessage/></a>
 
     </nav>
   )

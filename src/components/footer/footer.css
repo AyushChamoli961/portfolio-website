@@ -9,6 +9,7 @@
 
 .links-container{
     display: inline-flex;
+    margin: 1rem auto;
     gap: 2rem;
 }
 
