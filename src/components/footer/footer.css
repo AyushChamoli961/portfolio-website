@@ -1,0 +1,51 @@
+.footer-container{
+    text-align: center;
+    height: 40vh;
+    display: grid;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    padding-top: 2rem ;
+}
+
+.links-container{
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.links-container a{
+    color: var(--color-bg);
+}
+
+.icons-container{
+    display: inline-flex;
+    margin: 1rem auto;
+    gap: 2rem;
+    font-size: 30px;
+    text-align: center;
+}
+.icons-container svg{
+    color: var(--color-bg);
+}
+.footer-container h5{
+    margin-bottom: 5rem;
+    color: var(--color-bg);
+}
+
+@media screen and (max-width : 1024px) {
+    
+}
+
+/* ============ MEDIA QUERIES FOR SMALL DEVICES =========*/
+
+@media screen and (max-width : 600px) {
+    .footer-container{
+        height: 80vh;
+    }
+    .links-container{
+       display: grid;
+    }
+    .icons-container{
+        margin: 1.5rem auto;
+    }
+    
+}

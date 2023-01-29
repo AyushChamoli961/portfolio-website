@@ -1,0 +1,83 @@
+header{
+    height:  100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;   
+}
+
+/* ========== CTA ==========*/
+
+.cta{
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+/* ========== HEADER SOCIALS ==========*/
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0rem;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+/* ========== IMG ==========*/
+
+.me{
+    background: linear-gradient(#4db5ff, transparent);
+    width: 22rem;
+    height: 35rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem ; 
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem , 1.5rem , 1.5rem , 1.5rem;
+
+}
+
+.scroll{
+    position: absolute;
+    rotate: 90deg;
+    right: 0rem;
+    bottom: 7rem;
+}
+
+.scroll:hover{
+    color: var(--color-white);
+
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 100vh;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height:120vh;
+    }
+    .scroll , .header__socials{
+            display: none;
+        }
+}
+   

@@ -1,0 +1,74 @@
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 2rem;
+    
+}
+
+.Inservices-container{
+    display: gird;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: 2rem;
+    text-align: center;
+    transition: all 700ms ease;
+}
+.Inservices-container > h2{
+    color: var(--color-primary);
+}
+.Inservices-container:hover{
+    background: var(--color-bg-variant);
+    border-color: var(--color-white);
+}
+.services-list{
+    text-align: left;
+}
+ul {
+  display: block;
+  line-height: 3rem;
+ 
+}
+li{
+    transition: var(--transition)
+}
+li:hover{
+    color: grey;
+}
+
+.services-icon{
+    color: var(--color-primary)
+}
+/* ============ MEDIA QUERIES FOR MEDIUM DEVICES =========*/
+
+@media screen and (max-width : 1024px) {
+  .services-container{
+    grid-template-columns: 1fr;
+  }
+  .Inservices-container{
+        width: 80%;
+        margin: 1rem auto;
+        padding: 2rem;
+    }
+    
+    .services-list{
+        padding: 1rem;
+    }
+}
+
+/* ============ MEDIA QUERIES FOR SMALL DEVICES =========*/
+
+@media screen and (max-width : 600px) {
+    .services-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .services-container > div{
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+}
+

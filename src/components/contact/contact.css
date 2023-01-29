@@ -1,0 +1,93 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Incontact-container{
+    margin: 2rem 8rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+.Incontact-container:hover{
+    background: var(--color-bg-variant);
+}
+.Incontact-container svg{
+    margin-bottom: 1rem;
+    font-size: 32px;
+    color: var(--color-primary);
+}
+.Incontact-container h5{
+    margin-bottom: 1rem;
+}
+/* Form container */
+form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 1px solid var(--color-bg-primary);
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+}
+button{
+    background: transparent;
+}
+
+
+
+/* Form inputs */
+input[type="text"], input[type="email"], textarea {
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    color: var(--color-white)
+}
+
+
+textarea {
+    resize: none;
+    height: 30vh;
+}
+
+/* ============ MEDIA QUERIES FOR MEDIUM DEVICES =========*/
+
+@media screen and (max-width : 1024px) {
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+    button{
+        align-self: center;
+    }
+    .form-container{
+        padding: 2rem;
+    }
+    label{
+        text-align: center;
+    }
+    
+}
+
+/* ============ MEDIA QUERIES FOR SMALL DEVICES =========*/
+
+@media screen and (max-width : 600px) {
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+
+    .Incontact-container{
+        margin: 2rem 2rem;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+    }
+
+    
+}
+    
